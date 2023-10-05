@@ -7,7 +7,7 @@ let proximaPagina = document.querySelector('.proximaPagina')
 let currentPage = 1;
 
 async function getFilmes(page) {
-    await fetch(`http://www.omdbapi.com/?s=${filme.value}&apikey=e6c43dc6&page=${page}`)
+    await fetch(`https://www.omdbapi.com/?s=${filme.value}&apikey=e6c43dc6&page=${page}`)
     .then(async (response) => {
         const data = await response.json()
         console.log(data)
